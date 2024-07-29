@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #e6edf3; /* 메인 컨탠츠 제목 색상 */
+  margin: 1rem;
+}
