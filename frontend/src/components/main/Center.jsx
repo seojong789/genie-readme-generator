@@ -8,7 +8,7 @@ const CenterComponent = () => {
         <fieldset>
           <input type="text"></input>
         </fieldset>
-      </form>*/}
+      </form>asdasdasd*/}
       <h2>Editor</h2>
     </>
   );
