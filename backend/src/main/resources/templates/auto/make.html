@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AI README 생성</title>
+</head>
+<body>
+<h1>AI README 생성 폼</h1>
+<form th:action="@{/api/auto/make}" method="post">
+    <div>
+        <label for="gitHubUrl">GitHub URL:</label>
+        <input type="url" id="gitHubUrl" name="gitHubUrl" required>
+    </div>
+    <div>
+        <label for="title">제목:</label>
+        <input type="text" id="title" name="title" required>
+    </div>
+    <div>
+        <label for="description">설명:</label>
+        <textarea id="description" name="description" required></textarea>
+    </div>
+    <div>
+        <label for="techStack">기술 스택:</label>
+        <input type="text" id="techStack" name="techStack" placeholder="쉼표로 구분하여 입력">
+    </div>
+    <div>
+        <button type="submit">제출</button>
+    </div>
+</form>
+</body>
+</html>
